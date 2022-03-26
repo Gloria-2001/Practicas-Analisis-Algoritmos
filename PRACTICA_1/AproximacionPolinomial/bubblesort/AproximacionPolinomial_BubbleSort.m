@@ -1,0 +1,67 @@
+clc
+close all
+%%VALORES DE X 
+x=[50
+100
+250
+500
+1000
+1500
+2000
+2500
+3000
+4500
+5000
+5600
+10000
+50000
+100000
+200000
+400000
+600000
+800000
+1000000
+];
+ 
+%%VALORES DE Y = F(x) en Milisegundos
+y=[0.0319481
+0.1199245
+0.7297993
+3.0159950
+12.9630566
+29.5910835
+54.4049740
+79.0159702
+112.0791435
+250.4179478
+312.3328686
+568.2771206
+1268.2828903
+30406.7990780
+118379.1751862
+165604.2111
+663361.1219
+1498692.925
+2699049.169
+4204313.638
+];
+
+%%OBTENER UN POLINOMIO QUE SE AJUSTE A LOS PUNTOS X Y Y
+n=6; 				%%GRADO DEL POLINOMIO DE AJUSTE
+p=polyfit(x,y,n)	%%FUNCION QUE REALIZA EL AJUSTE POLINOMIAL
+
+%%SE CREA UN ESPACIO PARA REALIZAR UNA GRAFICA EN 
+%%DONDE SE COMPARA LA CURVA AJUSTADA CONTRA LOS 
+%%VALORES EXPERIMENTALES
+xi=linspace(0,1000000,1000);      %%ESPACIO DE PUNTOS PARA Xi
+z=polyval(p,xi);				%%EVALUACION DEL POLINOMIO P EN EL ESPACIO Xi
+
+%%SE REALIZA LA FIGURA CORRESPONDIENTE
+figure(1);
+plot(x,y,'o',xi,z,'-'),grid;
+%%plot(x,y,'o',xi,z,xi,z2,xi,z3,xi,z4),grid;
+ylabel('F(n)');
+xlabel('n');
+title({'Comparación de las aproximaciones de la función'},{'Ordenamiento por Inserción'});
+legend('Datos de ejecución','Polinomio de Grado 1','Polinomio de Grado 2','Polinomio de Grado 3', 'Polinomio de Grado 6') 
+

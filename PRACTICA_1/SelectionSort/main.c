@@ -1,6 +1,5 @@
 /*
     *****************************************************************
-    Gloria Oliva Olivares Ménez
     Curso: Análisis de algoritmos
     ESCOM-IPN
     Algoritmo de ordenación Selection Sort
