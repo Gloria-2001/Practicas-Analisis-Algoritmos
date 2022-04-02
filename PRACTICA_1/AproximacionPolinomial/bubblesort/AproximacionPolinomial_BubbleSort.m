@@ -47,8 +47,17 @@ y=[0.0319481
 ];
 
 %%OBTENER UN POLINOMIO QUE SE AJUSTE A LOS PUNTOS X Y Y
-n=6; 				%%GRADO DEL POLINOMIO DE AJUSTE
+n=1; 				%%GRADO DEL POLINOMIO DE AJUSTE
 p=polyfit(x,y,n)	%%FUNCION QUE REALIZA EL AJUSTE POLINOMIAL
+
+n=2; 				%%GRADO DEL POLINOMIO DE AJUSTE
+p2=polyfit(x,y,n)	%%FUNCION QUE REALIZA EL AJUSTE POLINOMIAL
+
+n=3; 				%%GRADO DEL POLINOMIO DE AJUSTE
+p3=polyfit(x,y,n)	%%FUNCION QUE REALIZA EL AJUSTE POLINOMIAL
+
+n=6; 				%%GRADO DEL POLINOMIO DE AJUSTE
+p4=polyfit(x,y,n)	%%FUNCION QUE REALIZA EL AJUSTE POLINOMIAL
 
 %%SE CREA UN ESPACIO PARA REALIZAR UNA GRAFICA EN 
 %%DONDE SE COMPARA LA CURVA AJUSTADA CONTRA LOS 
@@ -56,12 +65,20 @@ p=polyfit(x,y,n)	%%FUNCION QUE REALIZA EL AJUSTE POLINOMIAL
 xi=linspace(0,1000000,1000);      %%ESPACIO DE PUNTOS PARA Xi
 z=polyval(p,xi);				%%EVALUACION DEL POLINOMIO P EN EL ESPACIO Xi
 
+xi=linspace(0,1000000,1000);      %%ESPACIO DE PUNTOS PARA Xi
+z2=polyval(p2,xi);				%%EVALUACION DEL POLINOMIO P EN EL ESPACIO Xi
+
+xi=linspace(0,1000000,1000);      %%ESPACIO DE PUNTOS PARA Xi
+z3=polyval(p3,xi);				%%EVALUACION DEL POLINOMIO P EN EL ESPACIO Xi
+
+xi=linspace(0,1000000,1000);      %%ESPACIO DE PUNTOS PARA Xi
+z4=polyval(p4,xi);				%%EVALUACION DEL POLINOMIO P EN EL ESPACIO Xi
+
 %%SE REALIZA LA FIGURA CORRESPONDIENTE
 figure(1);
-plot(x,y,'o',xi,z,'-'),grid;
-%%plot(x,y,'o',xi,z,xi,z2,xi,z3,xi,z4),grid;
+%%plot(x,y,'o',xi,z,'-'),grid;
+plot(x,y,'o',xi,z,xi,z2,xi,z3,xi,z4),grid;
 ylabel('F(n)');
 xlabel('n');
-title({'Comparación de las aproximaciones de la función'},{'Ordenamiento por Inserción'});
-legend('Datos de ejecución','Polinomio de Grado 1','Polinomio de Grado 2','Polinomio de Grado 3', 'Polinomio de Grado 6') 
-
+title('Comparación de las aproximaciones de la función, Ordenamiento Burbuja');
+legend('Datos de ejecución','Polinomio de Grado 1','Polinomio de Grado 2','Polinomio de Grado 3', 'Polinomio de Grado 6');
