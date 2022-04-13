@@ -55,34 +55,40 @@ int main(int argc, char **argv){
         insertar(&miRaiz, A[i], n);
     }
 
-    imprimirArbol(miRaiz);
+    // imprimirArbol(miRaiz);
 
     //Iniciar conteo para evaluaciones de rendimiento
     uswtime(&utime0, &stime0, &wtime0); 
 
     //Algoritmo de busqueda
-    printf("%d (%d)\n", x, encontrarNumero(miRaiz, x, n));
+    encontrarNumero(miRaiz, x, n);
+    // printf("%d (%d)\n", x, encontrarNumero(miRaiz, x, n));
 
     //Evaluar tiempos de ejecución
     uswtime(&utime1, &stime1, &wtime1);
 
 	//Cálculo del tiempo de ejecución del programa
-	printf("\n");
-	printf("real (Tiempo total)  %.10f s\n",  wtime1 - wtime0);
-	printf("user (Tiempo de procesamiento en CPU) %.10f s\n",  utime1 - utime0);
-	printf("sys (Tiempo en acciónes de E/S)  %.10f s\n",  stime1 - stime0);
-	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-	printf("\n");
+	// printf("\n");
+	// printf("real (Tiempo total)  %.10f s\n",  wtime1 - wtime0);
+	// printf("user (Tiempo de procesamiento en CPU) %.10f s\n",  utime1 - utime0);
+	// printf("sys (Tiempo en acciónes de E/S)  %.10f s\n",  stime1 - stime0);
+	// printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+	// printf("\n");
+
+    printf("%.10f,",wtime1 - wtime0);
+    printf("%.10f,",utime1 - utime0);
+    printf("%.10f",stime1 - stime0);
+    printf("\n");
 
 	//Mostrar los tiempos en formato exponecial
-	printf("\n");
-	printf("real (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
-	printf("user (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
-	printf("sys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
-	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-	printf("\n");
+	// printf("\n");
+	// printf("real (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
+	// printf("user (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
+	// printf("sys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
+	// printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+	// printf("\n");
 
-    printf("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+    // printf("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
     exit(0); 
 }
 
@@ -113,19 +119,19 @@ void imprimirArbol_recursivo(arbolABB *raiz, int nivel){
     imprimirTabulacion(nivel);
     printf("izq: \n");
     
-    imprimirArbol_recursivo(raiz->izquierda, nivel+1);
+    // imprimirArbol_recursivo(raiz->izquierda, nivel+1);
 
     imprimirTabulacion(nivel);
     printf("der: \n");
 
-    imprimirArbol_recursivo(raiz->derecha, nivel+1);
+    // imprimirArbol_recursivo(raiz->derecha, nivel+1);
 
     imprimirTabulacion(nivel);
     printf("listo\n");
 }
 
 void imprimirArbol(arbolABB *raiz){
-    imprimirArbol_recursivo(raiz,0);
+    // imprimirArbol_recursivo(raiz,0);
 }
 
 bool insertar(arbolABB **raizptr, int valor, int n){
@@ -175,11 +181,11 @@ bool encontrarNumero(arbolABB *raiz, int valor, int n){
         Si el apuntador de la raíz a valor en la estructura del arbol es igual al valor buscado, se encontró
     */
     if(raiz==NULL){
-        printf("Valor NO encontrado\n");
+        // printf("\nValor NO encontrado\n");
         return false; 
     }
     if(raiz->valor==valor){
-        printf("Valor encontrado\n");
+        // printf("\nValor encontrado\n");
         return true;
     }
     /*
@@ -191,11 +197,11 @@ bool encontrarNumero(arbolABB *raiz, int valor, int n){
         if(valor<raiz->valor){
             raiz=raiz->izquierda; 
             if(raiz==NULL) {
-                printf("Valor NO encontrado\n");
+                // printf("\nValor NO encontrado\n");
                 return false; 
             }
             if(raiz->valor==valor){
-                printf("Valor encontrado\n");
+                // printf("\nValor encontrado\n");
                 return true;
             }
             //return encontrarNumero(raiz->izquierda, valor);
@@ -207,11 +213,11 @@ bool encontrarNumero(arbolABB *raiz, int valor, int n){
         else{
             raiz=raiz->derecha; 
             if(raiz==NULL) {
-                printf("Valor NO encontrado\n");
+                // printf("\nValor NO encontrado\n");
                 return false;
             } 
             if(raiz->valor==valor){
-                printf("Valor encontrado\n");
+                // printf("\nValor encontrado\n");
                 return true;
             }
             //return encontrarNumero(raiz->derecha, valor);
