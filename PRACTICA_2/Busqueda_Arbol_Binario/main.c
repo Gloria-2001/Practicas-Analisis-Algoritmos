@@ -15,6 +15,7 @@
 #include <stdbool.h>
 #include "tiempo.h"
 
+//se crea la estructura del árbol con un valor y 2 apuntadores a la izquierda y derecha 
 typedef struct arbolABB{
     int valor;
     struct arbolABB *izquierda;
@@ -86,9 +87,11 @@ int main(int argc, char **argv){
     exit(0); 
 }
 
+//función para crear un nodo del arbo, recibe el valor que ira dentro
 arbolABB *crearNodo(int valor){
-    arbolABB* nodo = malloc(sizeof(arbolABB));
-    if(nodo != NULL){
+    arbolABB* nodo = malloc(sizeof(arbolABB)); //se crea el espacio en la memoria
+    if(nodo != NULL){  
+        //se igualan los 2 aputnadores de izquiera y derecha a nulo, y el valor de la estructura al valor entrante
         nodo->izquierda=NULL;
         nodo->derecha=NULL;
         nodo->valor=valor;
@@ -96,28 +99,34 @@ arbolABB *crearNodo(int valor){
     return nodo;
 }
 
+//función para que al imprimir el arbol se hagan las tabulaciones necesarias
 void imprimirTabulacion(int numTabs){
     for(int i=0; i<numTabs; i++){
         printf("\t");
     }
 }
 
+//función para imprimir el arbol
 void imprimirArbol_recursivo(arbolABB *raiz, int nivel){
+    //si la raiz esta vacia, se hace una tabulacion y se imprime vacio
     if(raiz==NULL){
         imprimirTabulacion(nivel);
         printf("VACIO \n");
         return;
-    }
+    }  
+    //sino esta vacio igual imprime una tabulacion y el valor, y de nuevo imprime otra tabulacion
     imprimirTabulacion(nivel);
     printf("Valor: %d\n", raiz->valor);
     imprimirTabulacion(nivel);
     printf("izq: \n");
     
+    //vamos por el lado izquierdo y hacemos lo mismo, solo aumentamos el nivel
     imprimirArbol_recursivo(raiz->izquierda, nivel+1);
 
     imprimirTabulacion(nivel);
     printf("der: \n");
 
+    //vamos hacia el lado derecho e imprimimos también
     imprimirArbol_recursivo(raiz->derecha, nivel+1);
 
     imprimirTabulacion(nivel);
@@ -128,18 +137,22 @@ void imprimirArbol(arbolABB *raiz){
     imprimirArbol_recursivo(raiz,0);
 }
 
+//funcion para insertar 
 bool insertar(arbolABB **raizptr, int valor, int n){
     arbolABB *raiz = *raizptr; 
     if(raiz==NULL){
-        //arbol vacío
+        //arbol vacío, se crea un nuevo nodo
         (*raizptr)=crearNodo(valor);
         return true;
     }
+    //si el valor a insertar ya esta
     if(valor==raiz->valor){
         //hacer nada
         return false;
     }
 
+    //vamos desde 0 hasta la altura del arbol
+    //se hace lo mismo que vimos anteriormente, solo que del lado izquierdo y derecho 
     for(int i=0;i<n;i++){
         if(valor<raiz->valor){
             raizptr=&(raiz->izquierda);
