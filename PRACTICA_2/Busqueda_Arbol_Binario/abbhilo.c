@@ -3,8 +3,8 @@
     Curso: Análisis de algoritmos
     ESCOM-IPN
     Algoritmo de búsqueda Búsqueda Lineal o Secuencial
-    Compilación: "gcc main.c tiempo.x  -o main (tiempo.c si se tiene la implementación de la libreria o tiempo.o si solo se tiene el codigo objeto)"
-    Ejecución: "./main n" (Linux y MAC OS)
+    Compilación: "gcc abbhilo.c tiempo.x  -o abbhilo (tiempo.c si se tiene la implementación de la libreria o tiempo.o si solo se tiene el codigo objeto)"
+    Ejecución: "./abbhilo n" (Linux y MAC OS)
     *****************************************************************
 */
 
