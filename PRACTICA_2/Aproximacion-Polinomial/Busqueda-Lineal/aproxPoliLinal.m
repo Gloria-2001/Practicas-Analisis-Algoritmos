@@ -38,6 +38,6 @@ aux = figure(1);
 plot(x,y,'o',"linewidth", 3,xi,z,'-',"linewidth", 3),grid;
 ylabel('F(n)');
 xlabel('n');
-title('Aproximación Polinomial, Búsqueda Lineal');
+title('Aproximación Búsqueda Lineal');
 
 %% print(aux, "plot.jpg", "-djpg");
