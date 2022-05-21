@@ -117,7 +117,7 @@ p{
     grid-template-columns: auto auto;
 }
 
-#musica{
+#fourier{
     width: 300px;
     height: 350px;
     border-radius: 10px;
@@ -144,7 +144,6 @@ button{
     background-color: #018abe;
     border-color: #018abe;
     border-radius: 5px;
-    color: white;
     font-family: "QuickSand_L";
     margin: 10px;
     text-align: center;
@@ -154,6 +153,14 @@ button{
 button:hover{
     cursor: pointer;
     background-color: #D6EBEE;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover{
     color: black;
 }
 
