@@ -133,10 +133,9 @@ p{
     font-size: 1.2em;
 }
 
-.multPolinomial img{
-    margin-left: 39%;
-    width: 300px;
-    margin-top: 15px;
+#productoPol{
+    text-align: center;
+    margin-top: 5px;
 }
 
 .boton{
