@@ -33,12 +33,101 @@
 
     <div class="content">
         <h2 class="subtitulos">MULTIPLICACIÓN POLINOMIAL</h2>
-        
+        <br>
+        <p>Para empezar a hablar de polinomios, tenemos que ir un poco más adentro, que es a los monomios. Así que comenzaremos hablando de ese concepto.</p>
+        <br>
+        <h3>Monomios</h3>
+        <p>Un monomio puede entenderse como el producto de un número ya sea positivo, negativo o el mismo 0, por una variable literal.</p><br>
+        <p>Por ejemplo: el número 5 y la variable x<sup>2</sup>, el monomio se da al multiplicar el 5*x<sup>2</sup>, quedando a final como:</p>
+        <p>\[5x^2\]</p>
+        <p>Las partes de un monomio se pueden considerar como coeficiente y parte literal. El coeficiente se refiere a la parte númerica, cono todo y signo, y la otra es la variable literal. En nuestro ejemplo anterior, el coeficiente es 5 y la parte literal es x<sup>2</sup></p><br>
+        <p>Un monomio puede tener o no parte literal, es decir, que el superíndice sea 0, por ejemplo que en nuestro ejemplo anterior hubiera sido: </p>
+        <p>\[5x^0\]</p>
+        <p>Como todos sabemos, cualquier cosa elevada a la 0, es igual a 1, entonces esto quedaría como:</p>
+        <p>\[=5(1)\]</p>
+        <p>\[=5\]</p>
+        <p>Así que el monomio solo quedaría como 5. También puede darse el caso de que un monomio no tenga coeficiente, esto es cuando éste es 1, es decir en el mismo ejemplo que seguimos llevando sería:</p>
+        <p>\[1x^2\]</p>
+        <p>Entonces como cualquier cosa multiplicada por la unidad es la misma cosa, entonces sería:</p>
+        <p>\[=x^2\]</p>
+        <p>Aquí podemos manejar otro concepto, el cual es el grado del monomio, esto es simplemente el exponente al que está elevado la parte literal, en nuestro ejemplo, el grado de 5x<sup>2</sup> es 2.</p>
+
+        <br>
+
+        <h3>Polinomios.</h3>
+        <p>Ahora pasamos al concepto de polinomios. Un polinomio es simplemente es aquel que está constituido por varios monomios, como el siguiente ejemplo:</p>
+        <p>\[5x^2-x^8+2x^3-x+3x^5\]</p>
+        <p>En este caso, el grado del polinomio será el exponente mayor. En el ejemplo anterior, el exponente mayor es el número 8, así que el grado del polinomio es <b>8</b>. Podemos verlo ordenado de forma descendente:</p>
+        <p>\[-x^8+3x^5+2x^3+5x^2-x\]</p>
+
+        <br>
+
+        <h3>Multiplicación de Polinomios.</h3>
+        <p>El método más sencillo que se utiliza para multiplicar polinomios, es la suma del producto de todos los monomios del primer polinomio, por todos los monomios del segundo polinomio, claro, incluyendo los signos. Es importante recordar que para multiplicar 2 potencias de la misma base, sus exponentes se suman:</p>
+        <p>\[x^2*x^3=x^{2+3}=x^5\]</p>
+        <p>Ahora veremos algunos ejemplos sencillos de la multiplicación de polinomios.</p><br>
+        <p><b>Ejemplo 1:</b></p>
+        <p>Tenemos el polinomio A(x):</p>
+        <p>\[A(x)=8x^2+4x+3\]</p>
+        <p>Y el polinomio B(x):</p>
+        <p>\[B(x)=x^2-2x+10\]</p>
+        <p>Tenemos que encontrar el polinomio C(x), el cual es el producto de A(x) y B(x):</p>
+        <p>\[C(x)=(\color{green}{8x^2}\color{black}{+}\color{purple}{4x}\color{black}{+}\color{blue}{3})\color{black}{+}\color{red}{(x^2-2x+10)}\]</p>
+        <p>Primero tomaremos el primer término del polinomio A(x), que es 8x<sup>2</sup> y lo vamos a multiplicar por todo el polinomio B(x):</p>
+        <p>\[=\color{green}{(8x^2)}\color{black}{*}\color{red}{(x^2-2x+10)}\]</p>
+        <p>\[=\color{orange}{8x^4-16x^3+80x^2}\]</p>
+        <p>Guardamos esa parte, y ahora, avanzamos al segundo término de A(x), que es 4x, y hacemos lo mismo:</p>
+        <p>\[=\color{purple}{(4x)}\color{black}{*}\color{red}{(x^2-2x+10)}\]</p>
+        <p>\[=\color{orange}{4x^3-8x^2+40x}\]</p>
+        <p>Continuamos con el tercer término de A(x):</p>
+        <p>\[=\color{blue}{(3)}\color{black}{*}\color{red}{(x^2-2x+10)}\]</p>
+        <p>\[=\color{orange}{3x^2-6x+30}\]</p>
+        <p>Ahora sumamos todo lo que tenemos de color naranja:</p>
+        <p>\[8x^4-16x^3+80x^2\]</p>
+        <p>\[+4x^3-8x^2+40x\]</p>
+        <p>\[+3x^2-6x+30\]</p>
+        <p>Pero no podemos sumarlo así nada más, se van sumando términos semejantes, es decir, se suman los que tengan un exponente 4, con los que tengan un exponente 4, los de exponente 3 con exponente 3, y así sucesivamente:</p>
+        <p>\[=8x^4-16\color{darkgoldenrod}{x^3}\color{black}{+80}\color{crimson}{x^2}\color{black}{+4}\color{darkgoldenrod}{x^3}\color{black}{-8}\color{crimson}{x^2}\color{black}{+40}\color{darkcyan}{x}\color{black}{+3}\color{crimson}{x^2}\color{black}{-6}\color{darkcyan}{x}\color{black}{+30}\]</p>
+        <p>\[=8x^4-12x^3+75x^2+34x+30\]</p>
+        <p>Por lo tanto, el polinomio C(x), queda como:</p>
+        <p>\[C(x)=8x^4-12x^3+75x^2+34x+30\]</p>
+        <p>Para representar esto en un algoritmo, se usa la Transformada Discreta de Fourier, como se verá en la sección de: <a href="#">Solución Bruta</a>. Sin embargo, computacionalmente hablando, esto tiene un costo algo elevado, como se verá en dicho apartado.</p> <br>
+        <p>Así que luego veremos también en <a href="#">Solución Optimizada: Divide y Vencerás</a> una opción que ocupará menos recursos en nuestra máquina.</p><br>
+
+        <h3>Aplicaciones.</h3>
+        <p>Pero, ¿de qué sirve saber esto en la vida cotidiana?. Realmente los polinomios tienen una gran aplicación en muchas áreas de la vida cotidiana, desde Economía, hasta Criptografía, simplemente no lo vemos de inmediato.</p><br>
+        <p>Hablando de la Economía, modelizan mercados mostrando las variaciones de los precios respecto al tiempo, como el que suba o baje el precio de los productos repercute a las ventas o incluso para el cálculo de impuestos.</p>
+        <div class="aplicaciones"><img src="../img/impuestos.jpg" alt=""></div>
+        <p>También los tenemos presentes en Telecomunicaciones, como en el cálculo de la alineación de antenas electromagnéticas. El diseño de la antena se hace empleando los polinomios de Chevyshev para determinar la distribución de la corriente de cada elemento del arreglo y con base en estos datos encontrar las dimensiones físicas de dicha antena.</p>
+        <div class="aplicaciones"><img src="../img/chebyshev.jpg" alt="" id="chebyshev"></div>
+        <p>En el campo de la Biología, mediante expansiones polinomiales se puede clacular el cultivo de bacterias, calcular la estructura tridimensional de las proteínas y algo que nos ayuda mucho hoy en día, con polinomios de segundo o primer grado, dependiendo del número de contactos entre personas sanas y enfermas, podemos conocer la propagación de una enfermedad.</p>
+        <div class="aplicaciones"><img src="../img/proteinas.jpg" alt="" id="biologia"></div>
+        <p>En Ingeniería Forestal, los polinomios se utilizan para resolver problemas como calcular cuántos árboles se necesitan replantar despúes de haber talado cierta parte de un bosque por ejemplo.</p>
+        <div class="aplicaciones"><img src="../img/talar.jpg" alt="" id="talar"></div>
+        <p>En Medicina se usan las ecuaciones linelaes para el entendimiento de algunos fenómenos. Un ejemplo de esto puede ser el experimento psicológico de Stenberg sobre recuperación de información y la inteligencia.</p>
+        <div class="aplicaciones"><img src="../img/medicina.png" alt="" id="medicina"></div>
+        <p>También, como se mencionó, tiene aplicaciones en la Criptografía. En este campo se usan por ejemplo para poder representar una cadena binaria, suponiendo del mensaje a cifrar, en su forma polinómica, y así sea de alguna forma más sencillo operar con ellos. Así, en varios estándares de cifrado, como AES, se usa, además de los polinomios ya mencionados, un polinomio característico, que es muy importante, ya que contiene información del sistema. Además, se usan en La Criptografía de Curva Elíptica.</p>
+        <div class="aplicaciones"><img src="../img/cripto.png" alt="" id="cripto"></div>
+
+        <p>Como ya vimos, los polinomios se usan en varias ramas, entonces el optimizar sus operaciones, como en este caso, la multiplicación, realmente tiene y gran impacto facilitando mucho más el cálculo de las variables requeridas. Porque el método que mencionamos hace unos momentos, aunque es muy sencillo, también puede ser muy tardado, nada óptimo, sobre todo para la enorme cantidad de datos que pueden llegar a utilizarse.</p>
     </div>
-       
+    
+    <br><br>
+    <p><b>Fuentes de Consulta:</b></p>
+    <ul class="fuentes">
+        <li><a href="https://www.matesfacil.com/ESO/polinomios/multiplicar-polinomios-binomios-trinomios-producto-multiplicacion-ejercicios-resueltos.html">https://www.matesfacil.com/ESO/polinomios/multiplicar-polinomios-binomios-trinomios-producto-multiplicacion-ejercicios-resueltos.html</a></li>
+        <li><a href="http://inescarolina.blogspot.com/2012/07/usos-de-operaciones-con-polinomios-en.html">http://inescarolina.blogspot.com/2012/07/usos-de-operaciones-con-polinomios-en.html</a></li>
+        <li><a href="https://www.madrimasd.org/blogs/matematicas/2020/02/29/147396">https://www.madrimasd.org/blogs/matematicas/2020/02/29/147396</a></li>
+    </ul>
+    
+    <br>
+
     <footer>
         <p>&copy; Copyright</p>
     </footer>
+
     <script src="../script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+  	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>

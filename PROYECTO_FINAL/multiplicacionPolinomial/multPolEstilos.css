@@ -1,3 +1,24 @@
 .content{
     margin-top: 50px;
 }
+
+img{
+    width: 350px;
+    height: 350px;
+}
+
+#chebyshev{
+    width: 500px;
+}
+
+#biologia{
+    width: 550px;
+}
+
+#talar, #medicina, #cripto{
+    width: 450px;
+}
+
+.aplicaciones{
+    text-align: center;
+}
