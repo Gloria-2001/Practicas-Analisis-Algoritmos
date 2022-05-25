@@ -49,7 +49,7 @@
      pointer-events: none;
  }
 
- .textbox
+ .polinomio1, .polinomio2
   {
     width: 75px;
     text-align: center;
@@ -72,8 +72,18 @@
   color: #2E3133;
   }
   
-  .textbox:focus
+  .polinomio1, .polinomio2:focus
   {
   color: #2E3133;
   border-color: #FBFFAD;
   }
+
+#listaValoresPol1 a, #listaValoresPol2 a{
+    margin: 40px;
+    background-color: #D6EBEE;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: "QuickSand_L";
+    font-weight: bold;
+}

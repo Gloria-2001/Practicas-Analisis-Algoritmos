@@ -55,22 +55,22 @@
         
         <div class="inputText">
             <!-- style="visibility: hidden" -->
-            <input  class="textbox" type="number" name="" min="0" max="100" id="cfe0Pol1"   value="0">
+            <input  class="polinomio1" type="number" name="" min="0" max="100" id="cfe0Pol1"   value="0">
         
             <a id="sum1Pol1" >+</a>
-            <input  class="textbox" type="number" name="" min="0" max="100" id="cfe1Pol1"  value="0">
+            <input  class="polinomio1" type="number" name="" min="0" max="100" id="cfe1Pol1"  value="0">
             <a id="incog1Pol1">x</a>
         
             <a id="sum2Pol1" >+</a>
-            <input  class="textbox" type="number" name=""  min="0" max="100" id="cfe2Pol1" value="0">
+            <input  class="polinomio1" type="number" name=""  min="0" max="100" id="cfe2Pol1" value="0">
             <a id="incog2Pol1" >x²</a>
         
             <a id="sum3Pol1" >+</a>
-            <input  class="textbox"type="number" name="" min="0" max="100" id="cfe3Pol1"  value="0">
+            <input  class="polinomio1" type="number" name="" min="0" max="100" id="cfe3Pol1"  value="0">
             <a id="incog3Pol1" >x³</a>
         
             <a id="sum4Pol1" >+</a>
-            <input  class="textbox" type="number" name="" min="0" max="100" id="cfe4Pol1"  value="0">
+            <input  class="polinomio1" type="number" name="" min="0" max="100" id="cfe4Pol1"  value="0">
             <a id="incog4Pol1">x⁴</a>
         
         </div>
@@ -88,22 +88,22 @@
 
         <div class="inputText">
             <!-- style="visibility: hidden" -->
-            <input  class="textbox" type="number" name="" min="0" max="100" id="cfe0Pol2"   value="0">
+            <input  class="polinomio2" type="number" name="" min="0" max="100" id="cfe0Pol2"   value="0">
         
             <a id="sum1Pol2" >+</a>
-            <input  class="textbox" type="number" name="" min="0" max="100" id="cfe1Pol2"  value="0">
+            <input  class="polinomio2" type="number" name="" min="0" max="100" id="cfe1Pol2"  value="0">
             <a id="incog1Pol2">x</a>
         
             <a id="sum2Pol2" >+</a>
-            <input  class="textbox" type="number" name=""  min="0" max="100" id="cfe2Pol2" value="0">
+            <input  class="polinomio2" type="number" name=""  min="0" max="100" id="cfe2Pol2" value="0">
             <a id="incog2Pol2" >x²</a>
         
             <a id="sum3Pol2" >+</a>
-            <input  class="textbox"type="number" name="" min="0" max="100" id="cfe3Pol2"  value="0">
+            <input  class="polinomio2" type="number" name="" min="0" max="100" id="cfe3Pol2"  value="0">
             <a id="incog3Pol2" >x³</a>
         
             <a id="sum4Pol2" >+</a>
-            <input  class="textbox" type="number" name="" min="0" max="100" id="cfe4Pol2"  value="0">
+            <input  class="polinomio2" type="number" name="" min="0" max="100" id="cfe4Pol2"  value="0">
             <a id="incog4Pol2">x⁴</a>
         
         </div>
@@ -125,19 +125,25 @@
         <div class="boton">
             <!-- <button id="refresh">Recargar</button> -->
             <!-- <button id="mostrar">mostrar</button> -->
-            <button onclick="elementos()">Mostrar</button>
+            <button id="mostrar">Mostrar</button>
             <button id="Aleatorios"  onclick="Aleatorio()">Valores Aleatorios</button>
             <button id="ceros"  onclick="Ceros()">Ceros</button>
         </div>
-        
+
+        <br><br>
+        <div id="listaValoresPol1"></div>
+        <br><br>
+        <div id="listaValoresPol2"></div>
+        <br>
     </div>
     <br>
     <footer>
         <p>&copy; Copyright</p>
     </footer>
 
-    <script src="FuerzaBruta.js"></script> 
+    <script src="./fuerzaBrutaTest.js"></script>
     <script src="../script.js"></script>
+    <script src="./FuerzaBruta.js"></script>
 
     <!-- <script type="text/javascript">
 
