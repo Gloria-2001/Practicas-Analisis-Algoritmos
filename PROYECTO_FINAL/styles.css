@@ -164,6 +164,14 @@ button a{
     color: white;
 }
 
+button{
+    color: white;
+}
+
+button:hover{
+    color: black;
+}
+
 button a:hover{
     color: black;
 }

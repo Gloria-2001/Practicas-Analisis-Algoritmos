@@ -15,8 +15,12 @@ img{
     width: 550px;
 }
 
-#talar, #medicina, #cripto{
+#talar, #medicina{
     width: 450px;
+}
+
+#cripto{
+    width: 500px;
 }
 
 .aplicaciones{

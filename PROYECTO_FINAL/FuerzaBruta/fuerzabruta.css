@@ -1,0 +1,79 @@
+.content{
+    margin-top: 50px;
+}
+
+.inputText{
+    text-align: center;
+}
+
+.inputText a{
+    color: #02457a;
+    font-family: "QuickSand_M";
+    text-align: center;
+    font-size: 1.7em;
+    margin: 10px;  
+}
+
+/* .caja {
+    margin:20px auto 40px auto;	
+    border:1px solid #d9d9d9;
+    height:30px;
+    overflow: hidden;
+    width: 230px;
+    position:relative;
+    
+ } */
+
+ select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+ }
+
+ select:focus{ outline: none;}
+ 
+ .caja::after{
+     content:"\025be";
+     display:table-cell;
+     padding-top:7px;
+     text-align:center;
+     width:30px;
+     height:30px;
+     background-color:#d9d9d9;
+     position:absolute;
+     top:0;
+     right:0px;	
+     pointer-events: none;
+ }
+
+ .textbox
+  {
+    width: 75px;
+    text-align: center;
+  border: 1px solid #DBE1EB;
+  font-size: 18px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+  }
+  
+  .textbox:focus
+  {
+  color: #2E3133;
+  border-color: #FBFFAD;
+  }
