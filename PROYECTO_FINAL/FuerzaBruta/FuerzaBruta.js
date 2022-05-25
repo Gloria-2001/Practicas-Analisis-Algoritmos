@@ -27,30 +27,31 @@ function Aleatorio(){
   
 function elementos(){
 
-     var elemento =[] ;
+     var elementosPol1 =[] ;
+     var elementosPol2 =[] ;
         
         for(let i = 1 ; i <= 5 ; i++){
             if(i=1){
-                elemento[i]=document.getElementById("cfe0Pol1").value;
+                elementosPol1 [i]=document.getElementById("cfe0Pol1").value;
             }
            
             if(i=2){
-                elemento[i]=document.getElementById("cfe1Pol1").value;
+                elementosPol1 [i]=document.getElementById("cfe1Pol1").value;
             }
             if(i=3){
-                elemento[i]=document.getElementById("cfe2Pol1").value;
+                elementosPol1 [i]=document.getElementById("cfe2Pol1").value;
             }
             if(i=4){
-                elemento[i]=document.getElementById("cfe3Pol1").value;
+                elementosPol1 [i]=document.getElementById("cfe3Pol1").value;
             }
             if(i=5){
-                elemento[i]=document.getElementById("cfe4Pol1").value;
+                elementosPol1 [i]=document.getElementById("cfe4Pol1").value;
             }
             
         }
     
     
-        alert(elemento);
+       
     
     }
 

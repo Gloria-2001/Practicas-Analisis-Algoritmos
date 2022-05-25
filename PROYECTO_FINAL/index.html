@@ -52,8 +52,11 @@
 
     <div class="multPolinomial" id="tF">
         <h2 class="subtitulos">MULTIPLICACIÓN POLINOMIAL</h2>
-        <p>En palabras sencillas esto no es más que multiplicar 2 o más polinomios de grado n. De forma escueta, tenemos el polinomio A(x) y el B(x), entonces tenemos que encontrar el producto C(x) que sale de A(x)*B(x). Entonces <b>C(x)=A(x)*B(x)</b>, donde A, B y C son polinomios. <br>
-        Para estar todos en la misma sintonía, no está de más recordar un poco el concepto de polinomio, así como a lo que nos referimos cuando hablamos de un grado de un polinomio, el método más básico que se utiliza para llevar a cabo esta operación, y, ... ¿por qué no?, unas aplicaciones en la vida cotidiana de lo que puede tener multiplicar polinomios.<br>
+        <p>En palabras sencillas esto no es más que multiplicar 2 o más polinomios de grado n. De forma escueta, tenemos el polinomio A(x) y el B(x), 
+            entonces tenemos que encontrar el producto C(x) que sale de A(x)*B(x). Entonces <b>C(x)=A(x)*B(x)</b>, donde A, B y C son polinomios. <br>
+        Para estar todos en la misma sintonía, no está de más recordar un poco el concepto de polinomio, así como a lo que nos referimos cuando hablamos 
+        de un grado de un polinomio, el método más básico que se utiliza para llevar a cabo esta operación, y, ... ¿por qué no?, unas aplicaciones en la vida cotidiana 
+        de lo que puede tener multiplicar polinomios.<br>
         Para ver la explicación más amplia, por favor da click en el botón azul de abajo. </p>
         <div id="productoPol"><img src="./img/producto.png" alt=""></div>
         <div class="boton"><button><a href="./multiplicacionPolinomial/multPolinomial.html">Ver explicación más detallada</a></button></div>
@@ -61,7 +64,16 @@
 
     <div class="bruta" id="br">
         <h2 class="subtitulos">SOLUCIÓN BRUTA</h2>
-        <p></p>
+        <p>Tenemos que dados dos polinomios se requiere encontrar el polinomio resultado del producto de ambos polinomios <b>C(x)=A(x)*B(x)</b>.
+            Si pensamos en A y B como vectores, entonces el vector C se llama 'Convolución' de A y B. En matematicas una 
+            convolución es un operador que transforma dos funciones en una tercera función que en cierto sentido representa 
+            la magnitud en la que se superponen vector A y una versión trasladada e invertida del vector B.  El cálculo sencillo tiene una cota de 
+            complejidad Complejidad=O(n2) . La representación de polinomio que vimos anteriormente se llama representación de coeficiente. 
+            Otra forma de representar un polinomio se llama representación de valor puntual. Un polinomio de grado n-1 se puede representar 
+            de forma única por sus valores en al menos n puntos diferentes. Este es el resultado de la Teorma Fundamental del Álgebra que 
+            establece: “Un polinomio A (x) de grado n-1 se especifica de forma única mediante su evaluación en n valores distintos de x”.
+        </p>
+        <div id="productoPol"><img src="./img/brut.jpg" alt=""></div>
         <div class="boton"><button><a href="./FuerzaBruta/FuerzaBruta.html">Ver explicación más detallada</a></button></div>
     </div>
 
