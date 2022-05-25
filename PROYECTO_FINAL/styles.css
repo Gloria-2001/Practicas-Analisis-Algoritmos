@@ -133,9 +133,14 @@ p{
     font-size: 1.2em;
 }
 
-#productoPol{
+#productoPol, #fuerzaBruta{
     text-align: center;
     margin-top: 5px;
+}
+
+.imgBruta{
+    width: 350px;
+    height: 300px;
 }
 
 .boton{
