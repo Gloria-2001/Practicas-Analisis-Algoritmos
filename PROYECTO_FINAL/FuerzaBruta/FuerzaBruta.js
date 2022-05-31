@@ -25,35 +25,35 @@ function Aleatorio(){
   }
 
   
-function elementos(){
+// function elementos(){
 
-     var elementosPol1 =[] ;
-     var elementosPol2 =[] ;
+//      var elementosPol1 =[] ;
+//      var elementosPol2 =[] ;
         
-        for(let i = 1 ; i <= 5 ; i++){
-            if(i=1){
-                elementosPol1 [i]=document.getElementById("cfe0Pol1").value;
-            }
+//         for(let i = 1 ; i <= 5 ; i++){
+//             if(i=1){
+//                 elementosPol1 [i]=document.getElementById("cfe0Pol1").value;
+//             }
            
-            if(i=2){
-                elementosPol1 [i]=document.getElementById("cfe1Pol1").value;
-            }
-            if(i=3){
-                elementosPol1 [i]=document.getElementById("cfe2Pol1").value;
-            }
-            if(i=4){
-                elementosPol1 [i]=document.getElementById("cfe3Pol1").value;
-            }
-            if(i=5){
-                elementosPol1 [i]=document.getElementById("cfe4Pol1").value;
-            }
+//             if(i=2){
+//                 elementosPol1 [i]=document.getElementById("cfe1Pol1").value;
+//             }
+//             if(i=3){
+//                 elementosPol1 [i]=document.getElementById("cfe2Pol1").value;
+//             }
+//             if(i=4){
+//                 elementosPol1 [i]=document.getElementById("cfe3Pol1").value;
+//             }
+//             if(i=5){
+//                 elementosPol1 [i]=document.getElementById("cfe4Pol1").value;
+//             }
             
-        }
+//         }
     
     
        
     
-    }
+//     }
 
 // document.ready = document.getElementById("Polinomio1").value = '0';
 
