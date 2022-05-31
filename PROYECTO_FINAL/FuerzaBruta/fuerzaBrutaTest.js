@@ -72,11 +72,12 @@ let resultado = [];
 function reduccionTerminos(){
 
 
-
-    let total=0;
-    for(let i = 1; i < 6 ; i+=4) {
-        total+=resultadosPrevios[i];
+    var total ;
+    for(var i = 1; i < 6 ; i+=4) {
+       total+=resultadosPrevios[i];
+       
     } 
+    
     console.log(total);
  
 
