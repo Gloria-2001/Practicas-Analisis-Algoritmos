@@ -43,7 +43,7 @@ let resultado = [];
 
 function reduccionTerminos(){
    var  diagonal0=resultadosPrevios[0]
-    // var diagonal1=resultadosPrevios[1]+resultadosPrevios[5];
+    var diagonal1=resultadosPrevios[1]+resultadosPrevios[5];
     // var diagonal2=resultadosPrevios[2]+resultadosPrevios[6]+resultadosPrevios[10];
     // var diagonal3=resultadosPrevios[3]+resultadosPrevios[7]+resultadosPrevios[11]+resultadosPrevios[15];
     // var diagonal4=resultadosPrevios[4]+resultadosPrevios[8]+resultadosPrevios[12]+resultadosPrevios[16]+resultadosPrevios[20];
@@ -53,7 +53,7 @@ function reduccionTerminos(){
     // var diagonal8=resultadosPrevios[24];
 
     console.log(diagonal0);
-    // console.log(diagonal1); 
+    console.log(diagonal1); 
     // console.log(diagonal2);
     // console.log(diagonal3);
     // console.log(diagonal4);
