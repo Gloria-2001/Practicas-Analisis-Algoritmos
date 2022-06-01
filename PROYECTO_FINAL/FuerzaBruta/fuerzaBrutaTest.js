@@ -1,10 +1,14 @@
 const mostrar = document.getElementById("mostrar");
 let lista1 = document.getElementById("listaValoresPol1");
 let lista2 = document.getElementById("listaValoresPol2");
+let lista3 = document.getElementById("MatrizDePolinomios");
+
 let polinomio1 = document.querySelectorAll(".polinomio1");
 let polinomio2 = document.querySelectorAll(".polinomio2");
+
 var mostrar_Polinomio_1 = document.getElementById("show1");
 var mostrar_Polinomio_2 = document.getElementById("show2");
+var mostrar_matriz_Uno = document.getElementById("show3");
 
 let ArregloPolinomio1= [];
 let ArregloPolinomio2= [];
@@ -62,6 +66,7 @@ function multiplicacion(){
     for (i = 0; i < ArregloPolinomio1.length; i++) {
         for (j = 0; j < ArregloPolinomio2.length; j++) {
             let coeficiente = (ArregloPolinomio1[i]) * (ArregloPolinomio2[j]);
+
             resultadosPrevios.push([coeficiente]);
         }
     }
@@ -71,6 +76,7 @@ function multiplicacion(){
 let resultado = [];
 
 function reduccionTerminos(){
+
      let Coefi0 ;
      let Coefi1;
      let Coefi2;
@@ -99,15 +105,38 @@ function reduccionTerminos(){
 }
 
 function mostrarPolinomios(){
+
     let my_list1 = `<li id="head1"></li>` 
     polinomio1.forEach(elemento=>{
         my_list1 += `<li>${elemento.value}</li>`
     });
     mostrar_Polinomio_1.innerHTML = my_list1;
 
-    let my_list2 = `<li id="head2"></li>`
+    let my_list2 = '<li id="head2"></li>'
     polinomio2.forEach(elemento=>{
         my_list2 += `<li>${elemento.value}</li>`
     });
-    mostrar_Polinomio_2.innerHTML = my_list2
+    mostrar_Polinomio_2.innerHTML = my_list2;
+    
+    
+    let my_list3 = `<li id="head3"> </li>`
+    for(let i = 0; i < resultadosPrevios.length; i++){
+
+        if(i%5 == 0){
+            my_list3 += `<br><br><br>`
+        }
+        my_list3 += `<li>${resultadosPrevios[i]}</li>`
+    }  
+    mostrar_matriz_Uno.innerHTML = my_list3;
+    
+    
+
+    /*
+    let my_list3 = `<li id="head3"> </li>`
+    resultadosPrevios.forEach( elemento =>{
+        my_list3 += `<li>${ elemento }</li>`
+    }); 
+    mostrar_matriz_Uno.innerHTML = my_list3; 
+    */
+
 }
