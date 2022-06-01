@@ -3,6 +3,8 @@ let lista1 = document.getElementById("listaValoresPol1");
 let lista2 = document.getElementById("listaValoresPol2");
 let polinomio1 = document.querySelectorAll(".polinomio1");
 let polinomio2 = document.querySelectorAll(".polinomio2");
+var mostrar_Polinomio_1 = document.getElementById("show1");
+var mostrar_Polinomio_2 = document.getElementById("show2");
 
 let ArregloPolinomio1= [];
 let ArregloPolinomio2= [];
@@ -35,10 +37,9 @@ function Aleatorio(){
  }
 
 
-
-
 mostrar.addEventListener("click",e=>{
     e.preventDefault;
+    mostrarPolinomios();
     guardar();
     multiplicacion();
     reduccionTerminos();
@@ -70,8 +71,6 @@ function multiplicacion(){
 let resultado = [];
 
 function reduccionTerminos(){
-
-
      let Coefi0 ;
      let Coefi1;
      let Coefi2;
@@ -97,7 +96,18 @@ function reduccionTerminos(){
     console.log(Coefi6);
     console.log(Coefi7);
     console.log(Coefi8);
- 
+}
 
+function mostrarPolinomios(){
+    let my_list1 = `<li id="head1"></li>` 
+    polinomio1.forEach(elemento=>{
+        my_list1 += `<li>${elemento.value}</li>`
+    });
+    mostrar_Polinomio_1.innerHTML = my_list1;
 
+    let my_list2 = `<li id="head2"></li>`
+    polinomio2.forEach(elemento=>{
+        my_list2 += `<li>${elemento.value}</li>`
+    });
+    mostrar_Polinomio_2.innerHTML = my_list2
 }

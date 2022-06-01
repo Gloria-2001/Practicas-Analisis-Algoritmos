@@ -205,7 +205,8 @@ footer{
     width: 100%;
     font-family: "QuickSand_L";
     bottom: 0;
-    padding: 14px 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 footer p{

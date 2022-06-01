@@ -78,12 +78,16 @@
   border-color: #FBFFAD;
   }
 
-#listaValoresPol1 a, #listaValoresPol2 a{
-    margin: 40px;
+#head1, #head2{
+    background-color: white !important; 
+}
+
+#show1 li, #show2 li{
+    display: inline;
+    margin: 10px;
     background-color: #D6EBEE;
     padding: 15px;
-    text-decoration: none;
-    color: black;
     font-family: "QuickSand_L";
     font-weight: bold;
 }
+

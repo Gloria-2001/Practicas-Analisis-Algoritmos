@@ -1,0 +1,36 @@
+.contenido{
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+#general {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.imgInfo {
+    width: 200px;
+    height: 250px;
+    margin-left: 15px;
+}
+
+.nombre {
+    font-family: "QuickSand_B";
+    font-size: 14.5px;
+    text-align: center;
+}
+
+.infoPersonal {
+    font-family: "QuickSand_R";
+    font-size: 14px;
+    text-align: justify;
+}
+
+#gloria, #juan, #alan{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px #02457A;
+}
