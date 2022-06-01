@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand;
+  text-decoration: none;
+}
+/*
+.cabecero {
+      height: 40vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      width: 100%;
+      color: #fff;
+      background: url(), #7b4397;
+      background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#544397), to(#541edb));
+      background: url(fondo.png), linear-gradient(to left, #7b4397, #541edb)
+  }
+  */
+
+  .cabecero {
+      height: 40vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      width: 100%;
+      color: white;
+      background: url(fondo.png)
+  }
+
+body{ margin:0px; padding:0px;}
+
+      ul{margin:0px; padding:0px;  }
+
+      li{ list-style:none; width:100%; border-bottom:thin #fff solid; }
+
+      a{text-decoration:none; color:white; display:block; text-align:center; padding:15px 0px 15px 0px}
+
+      a:hover{ background-color:#001848; color:whitesmoke}     
+
+      h1{ background-color:#001848; color:whitesmoke; margin:0px; padding:11px 0px 11px 50px; text-align: center}
+
+      main{text-align: justify;}
+
+      footer{ 
+            width: 100%;
+            height: 14vh;
+            position: fixed;
+            bottom: 0;
+            padding: 0rem;
+            border-top: .1rem solid whitesmoke ;
+            background-color:#001848;
+            backdrop-filter: blur(2px);
+            color:whitesmoke;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+            text-align: center;
+      }
+
+      h3{
+            text-align: center;
+      } 
+      
+      h4
+      {
+    text-align: center;
+    color: rgb(0, 0, 0);
+      }
+
+      #menuCheck{ display:none; }
+      .iconoMenu{width:30px; height:26px; float:left; cursor:pointer; }
+      .iconoMenu:before{margin-top: 20px; margin-left:15px; display: block;height: 2px;width: 20px;border-top: 1px solid #dddddd;background: #dddddd;content: '';}
+
+      .iconoMenu:after{margin-top: 5px; margin-left:15px; display: block;height: 4px;width: 20px;border-top: 3px solid #dddddd;border-bottom: 3px solid #dddddd;content: '';}
+
+      .contenedorMenu{ width:50%; height:25%;  background-color: #001848; color: #000000; position:absolute; top:60px;  transform: translateX(-100%); transition: all 0.5s;}
+      #menuCheck:checked ~ .contenedorMenu{transform: translateX(0%)}
+
+      .info{
+            background-color:#FFFF;
+            padding: 20px 25px;
+      }
+
+      .informacion{
+            background-color:#FFFF;
+            padding: 0px 25px;
+      }
+
+      .escudos{
+            background-color:#FFFF;
+            height: 50px;
+            width: 50px;
+
+      }
+      .ESCOM{
+             width: 150px; height:100px;
+      }
+      .IPN{
+         width: 150px; height:100px;   
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+      .contenedorMenu{ width:50%; height:32.5%;  background-color: #001848; color: #000000; position:absolute; top:60px;  transform: translateX(-100%); transition: all 0.5s;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+      .contenedorMenu{ width:50%; height:32.5%;  background-color: #001848; color: #000000; position:absolute; top:60px;  transform: translateX(-100%); transition: all 0.5s;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   .contenedorMenu{ width:50%; height:32.5%;  background-color: #001848; color: #000000; position:absolute; top:60px;  transform: translateX(-100%); transition: all 0.5s;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   .contenedorMenu{ width:50%; height:32.5%;  background-color: #001848; color: #000000; position:absolute; top:60px;  transform: translateX(-100%); transition: all 0.5s;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   .contenedorMenu{ width:50%; height:32.5%;  background-color: #001848; color: #000000; position:absolute; top:60px;  transform: translateX(-100%); transition: all 0.5s;}
+}
