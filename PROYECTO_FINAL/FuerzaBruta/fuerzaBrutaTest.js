@@ -1,11 +1,11 @@
 const mostrar = document.getElementById("mostrar");
 let lista1 = document.getElementById("listaValoresPol1");
 let lista2 = document.getElementById("listaValoresPol2");
-var polinomio1 = document.querySelectorAll(".polinomio1");
-var polinomio2 = document.querySelectorAll(".polinomio2");
+let polinomio1 = document.querySelectorAll(".polinomio1");
+let polinomio2 = document.querySelectorAll(".polinomio2");
 
-var ArregloPolinomio1= [];
-var ArregloPolinomio2= [];
+let ArregloPolinomio1= [];
+let ArregloPolinomio2= [];
 
 
 function Aleatorio(){          
@@ -54,7 +54,7 @@ function guardar(){
     })
 }
 
-var resultadosPrevios = [];
+let resultadosPrevios = [];
 
 function multiplicacion(){
     let i = 0, j = 0;
@@ -72,32 +72,32 @@ let resultado = [];
 function reduccionTerminos(){
 
 
-    var total ;
-    for(var i = 1; i < 6 ; i+=4) {
-       total+=resultadosPrevios[i];
-       
-    } 
+     let Coefi0 ;
+     let Coefi1;
+     let Coefi2;
+     let Coefi3;
     
-    console.log(total);
+    
+     Coefi0 = parseInt(resultadosPrevios[0]);
+     Coefi1 = parseInt(resultadosPrevios[1]) + parseInt(resultadosPrevios[5]);
+     Coefi2 = parseInt(resultadosPrevios[2]) +parseInt(resultadosPrevios[6])+parseInt(resultadosPrevios[10]);
+    Coefi3 = parseInt(resultadosPrevios[3]) + parseInt(resultadosPrevios[7]) +parseInt(resultadosPrevios[11])+ parseInt(resultadosPrevios[15]);
+    Coefi4 =   parseInt(resultadosPrevios[4]) + parseInt(resultadosPrevios[8]) +parseInt(resultadosPrevios[12])+ parseInt(resultadosPrevios[16])+parseInt(resultadosPrevios[20]);
+    Coefi5 =parseInt(resultadosPrevios[9]) + parseInt(resultadosPrevios[13]) +parseInt(resultadosPrevios[17])+ parseInt(resultadosPrevios[21]);
+    Coefi6 = parseInt(resultadosPrevios[14]) +parseInt(resultadosPrevios[18])+parseInt(resultadosPrevios[22]);
+    Coefi7 =  parseInt(resultadosPrevios[19]) + parseInt(resultadosPrevios[23]);
+    Coefi8 =parseInt(resultadosPrevios[24]);
+    
+    console.log(Coefi0);
+    console.log(Coefi1);
+    console.log(Coefi2);
+    console.log(Coefi3);
+    console.log(Coefi4);
+    console.log(Coefi5);
+    console.log(Coefi6);
+    console.log(Coefi7);
+    console.log(Coefi8);
  
 
-//    var  diagonal0=resultadosPrevios[0]
-//     var diagonal1=resultadosPrevios[1]+resultadosPrevios[5];
-    // var diagonal2=resultadosPrevios[2]+resultadosPrevios[6]+resultadosPrevios[10];
-    // var diagonal3=resultadosPrevios[3]+resultadosPrevios[7]+resultadosPrevios[11]+resultadosPrevios[15];
-    // var diagonal4=resultadosPrevios[4]+resultadosPrevios[8]+resultadosPrevios[12]+resultadosPrevios[16]+resultadosPrevios[20];
-    // var diagonal5=resultadosPrevios[9]+resultadosPrevios[13]+resultadosPrevios[17]+resultadosPrevios[21];
-    // var diagonal6=resultadosPrevios[14]+resultadosPrevios[18]+resultadosPrevios[22]
-    // var diagonal7=resultadosPrevios[19]+resultadosPrevios[23];
-    // var diagonal8=resultadosPrevios[24];
 
-    // console.log(diagonal0);
-    // console.log(diagonal1); 
-    // console.log(diagonal2);
-    // console.log(diagonal3);
-    // console.log(diagonal4);
-    // console.log(diagonal5);
-    // console.log(diagonal6);
-    // console.log(diagonal7);
-    // console.log(diagonal8);
 }
