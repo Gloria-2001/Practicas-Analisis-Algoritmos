@@ -6,7 +6,7 @@
 #general {
     display: grid;
     grid-template-columns: repeat(3, 250px);
-    grid-gap: 30px;
+    grid-gap: 50px;
     justify-content: center;
 }
 

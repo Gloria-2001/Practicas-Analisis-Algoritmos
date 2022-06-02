@@ -78,6 +78,8 @@ h1, h2{
     font-family: "QuickSand_B";
     text-align: center;
     margin-top: 15px;
+    color: black;
+    font-size: 25px;
 }
 
 #prog{
@@ -150,35 +152,23 @@ p{
 
 button{
     padding: 5px;
-    background-color: #018abe;
-    border-color: #018abe;
+    background-color: #001848;
+    border-color: #001848;
     border-radius: 5px;
     font-family: "QuickSand_L";
     margin: 10px;
     text-align: center;
     font-size: 1em;
+    color: white;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: #D6EBEE;
 }
 
 button a{
     text-decoration: none;
     color: white;
-}
-
-button{
-    color: white;
-}
-
-button:hover{
-    color: black;
-}
-
-button a:hover{
-    color: black;
 }
 
 h3{

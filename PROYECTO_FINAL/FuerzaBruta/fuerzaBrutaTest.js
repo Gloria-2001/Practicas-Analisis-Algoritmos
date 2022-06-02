@@ -129,8 +129,6 @@ function mostrarPolinomios(){
     }  
     mostrar_matriz_Uno.innerHTML = my_list3;
     
-    
-
     /*
     let my_list3 = `<li id="head3"> </li>`
     resultadosPrevios.forEach( elemento =>{
