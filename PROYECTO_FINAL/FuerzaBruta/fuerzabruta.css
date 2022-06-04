@@ -78,16 +78,125 @@
   border-color: #FBFFAD;
   }
 
-#head1, #head2, #head3{
+#head1, #head2, #head3,#head4{
     background-color: white !important; 
 }
 
-#show1 li, #show2 li, #show3 li{
+#centrar{
+  text-align: center;
+}
+
+/* #show1 li, #show2 li, #show3 li{
+  
     display: inline;
     margin: 10px;
-    background-color: #D6EBEE;
+    color: #FFFFFF;
+    background-color:  #02457a;
+    border-radius: 10px;
     padding: 15px;
     font-family: "QuickSand_L";
     font-weight: bold;
+    animation-name: Pol1;
+    animation-duration: 7s;
+    
+
+} */
+
+#show1 li{
+  display: inline;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color:  #02457a;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "QuickSand_L";
+  font-weight: bold;
+  animation-name: Pol1;
+  animation-duration: 5s;
+  
 }
 
+@keyframes Pol1 {
+  from {
+    margin-left: 700px;
+
+  }
+
+  to {
+    margin-left: 10px;
+  }
+}
+
+
+#show2 li{
+  display: inline;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color:  #02457a;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "QuickSand_L";
+  font-weight: bold;
+  animation-name: Pol2;
+  animation-duration: 6s;
+  
+}
+
+@keyframes Pol2 {
+  from {
+    margin-left: 700px;
+
+  }
+
+  to {
+    margin-left: 10px;
+  }
+
+  
+}
+
+#MatrizDePolinomios{
+  text-align: center;
+}
+
+#show3 li{
+
+  display: inline;
+  position: relative;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color:  #02457a;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "QuickSand_L";
+  font-weight: bold;
+  animation-name: Pol3;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+ 
+}
+
+
+@keyframes Pol3 {
+  from {
+   left : 1000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+#show4  li{
+
+  display: inline;
+  position: relative;
+  margin: 10px;
+  color: #FFFFFF;
+  background-color:  #02457a;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "QuickSand_L";
+  font-weight: bold;
+
+ 
+}
