@@ -46,6 +46,7 @@ mostrar.addEventListener("click",e=>{
     multiplicacion();
     reduccionTerminos();
     mostrarPolinomios();
+    cambioColor();
 });
 
 function guardar(){
@@ -138,7 +139,8 @@ function mostrarPolinomios(){
     //     my_list3 += `<li>${ elemento }</li>`
     // }); 
     // mostrar_matriz_Uno.innerHTML = my_list3; 
-    
+}
 
-
+function cambioColor(){
+    let actual = document.getElementById("current-blue");
 }
