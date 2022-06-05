@@ -112,7 +112,7 @@
   font-family: "QuickSand_L";
   font-weight: bold;
   animation-name: Pol1;
-  animation-duration: 5s;
+  animation-duration: 3s;
   
 }
 
@@ -138,7 +138,7 @@
   font-family: "QuickSand_L";
   font-weight: bold;
   animation-name: Pol2;
-  animation-duration: 6s;
+  animation-duration: 4.5s;
   
 }
 
@@ -171,7 +171,7 @@
   font-family: "QuickSand_L";
   font-weight: bold;
   animation-name: Pol3;
-  animation-duration: 10s;
+  animation-duration: 5.5s;
   animation-fill-mode: forwards;
  
 }
@@ -197,4 +197,19 @@
   padding: 15px;
   font-family: "QuickSand_L";
   font-weight: bold;
+  animation-name: Pol4;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+
+ 
+}
+
+
+@keyframes Pol4 {
+  from {
+   left : 1000px;
+  }
+  to {
+    left: 0px;
+  }
 }
