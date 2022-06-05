@@ -137,8 +137,16 @@ function mostrarPolinomios(){
 
 
     let my_list4 = `<li id="head4"> </li>`
-    my_list4 += `<li>${Coefi0}</li>`  
-    SumDiagonal.innerHTML = my_list4;
+    my_list4 = `<li>${Coefi0}</li>
+                     <li>${Coefi1}x</li>
+                     <li>${Coefi2}x²</li>
+                     <li>${Coefi3}x³</li>
+                     <li>${Coefi4}x⁴</li>
+                     <li>${Coefi5}x⁵</li>
+                     <li>${Coefi6}x⁶</li>
+                     <li>${Coefi7}x⁷</li>
+                     <li>${Coefi8}x⁸</li>`  
+   SumDiagonal.innerHTML = my_list4;
     
     // let my_list3 = `<li id="head3"> </li>`
     // resultadosPrevios.forEach( elemento =>{
