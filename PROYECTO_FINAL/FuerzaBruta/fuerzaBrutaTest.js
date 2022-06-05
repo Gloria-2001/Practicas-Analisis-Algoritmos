@@ -11,6 +11,16 @@ var SumDiagonal = document.getElementById("show4");
 let ArregloPolinomio1= [];
 let ArregloPolinomio2= [];
 
+let Coefi0 ;
+let Coefi1;
+let Coefi2;
+let Coefi3;
+let Coefi4;
+let Coefi5;
+let Coefi6;
+let Coefi7;
+let Coefi8;
+
 
 function Aleatorio(){          
     document.getElementById("cfe0Pol1").value = Math.floor(Math.random() * (100-1+1)) + 1;
@@ -74,10 +84,7 @@ function multiplicacion(){
 let resultado = [];
 
 function reduccionTerminos(){
-     let Coefi0 ;
-     let Coefi1;
-     let Coefi2;
-     let Coefi3;
+  
     
     
      Coefi0 = parseInt(resultadosPrevios[0]);
