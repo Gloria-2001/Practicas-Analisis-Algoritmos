@@ -43,7 +43,7 @@ formu.addEventListener("submit", (event) =>
     canvas.hidden = false;
     operaciones.hidden = false;
 
-    descripcion.innerHTML = "Representación de Valores del Primer Polinomio";
+    descripcion.innerHTML = "Valores del Primer Polinomio:";
     contDesc.hidden = false;
     let containerCoefA = displayArray(coefA);
     const valoresA = fft(containerCoefA, coefA, 0); // Representación de valores en puntos del polinomio A
@@ -59,7 +59,7 @@ formu.addEventListener("submit", (event) =>
 
         conta = 0;
         let containerCoefB = displayArray(coefB);
-        descripcion.innerHTML = "Representación de Valores del Segundo Polinomio";
+        descripcion.innerHTML = "Valores del Segundo Polinomio";
         const valoresB = fft(containerCoefB, coefB, 0); // Representación de valores en puntos del polinomio B
         valoresB.then(valoresB =>
         {
@@ -91,7 +91,7 @@ formu.addEventListener("submit", (event) =>
                   botoncito.remove();
 
                   console.log("[VALORES EN PUNTOS DE 'C']", valoresC);
-                  descripcion.innerHTML = "Regresamos a Coeficientes del polinomio 3 ";
+                  descripcion.innerHTML = "Regresando coeficientes del tercer polinomio";
 
                   conta = 0;
                   let containerValC = displayArray(valoresC);
@@ -99,7 +99,7 @@ formu.addEventListener("submit", (event) =>
                   interpolation.then(valoresC =>
                   {
                     center(containerValC);
-                    descripcion.innerHTML = "Se divide entre la cantidad de elementos";
+                    descripcion.innerHTML = "División";
                     let botonDivide = creaBoton("DIVISIÓN");
                     botonDivide.onclick = () =>
                     {
@@ -113,7 +113,7 @@ formu.addEventListener("submit", (event) =>
                       console.log("[FILTRADO DE 0'S AL FINAL DEL ARREGLO]", coefC);
                       containerValC = modificaArrays(containerValC,coefC);
                       canvas.style.height = `${containerValC.offsetHeight + topMargin}px`;
-                      descripcion.innerHTML = "¡Listo! El resultado en coeficientes del polinomio 3 es:";
+                      descripcion.innerHTML = "¡Listo! Los coeficientes del polinomio 3 son:";
                     };
                   });
                 };

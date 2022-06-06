@@ -16,18 +16,18 @@ function displayArray(arr) {
     etiqueta.innerHTML += imaginario(iguales(valor.im));
     let elemento = document.createElement("div");
     elemento.className = "array-element";
-    elemento.style.border = "5px solid #000000";
+    elemento.style.border = "1px solid #000000";
     elemento.style.backgroundColor = "#ffffff";
     elemento.style.color = "#000000";
-    elemento.style.fontWeight = "600";
-    elemento.style.padding = "0 16px";
+    elemento.style.fontWeight = "100";
+    elemento.style.padding = "0 0";
     elemento.appendChild(etiqueta);
     container.innerHTML += `${elemento.outerHTML}`;
 	}
 	canvas.append(container);
 
 	function center() {
-		container.style.left = (canvas.offsetWidth / 2) - (container.offsetWidth / 2) + "px";
+		container.style.left = (canvas.offsetWidth / 3) - (container.offsetWidth / 4) + "px";
 	}
 	center();
   // window.resize(center);
@@ -36,7 +36,7 @@ function displayArray(arr) {
 }
 
 function center(container) {
-  container.style.left = `${(canvas.offsetWidth / 2) - (container.offsetWidth / 2)}px`;
+  container.style.left = `${(canvas.offsetWidth / 3) - (container.offsetWidth / 4)}px`;
 }
 
 function displayMultArray(arr,valor) {
@@ -50,11 +50,11 @@ function displayMultArray(arr,valor) {
     etiqueta.innerHTML += imaginario(iguales(complejo.im));
     let elemento = document.createElement("div");
     elemento.className = "array-element";
-    elemento.style.border = "1px solid #000";
+    elemento.style.border = "1px solid #fff";
     elemento.style.backgroundColor = "#fff";
     elemento.style.color = "#000";
-    elemento.style.fontWeight = "600";
-    elemento.style.padding = "0 16px";
+    elemento.style.fontWeight = "100";
+    elemento.style.padding = "0 0";
     elemento.appendChild(etiqueta);
     container.innerHTML += `${elemento.outerHTML}`;
 	}

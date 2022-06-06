@@ -1,5 +1,5 @@
 let miliseconds = {value: 650};
-const topMargin = 32;
+const topMargin = 10;
 let getTimeout = () => {
   return miliseconds;
 }
@@ -12,20 +12,21 @@ const iguales = (a) => (a == a.toFixed(2))? `${a}`:`${a.toFixed(2)}`;
 function crearSubA(contenedor,arreglo,direccion) {
   let container = document.createElement("div");
   container.className = "array-container";
-  container.style.position = "absolute";
+   container.style.position = "absolute"; 
   container.style.display = "inline-flex";
 
+  //Arreglo derecho
   for (valor of arreglo) {
     let etiqueta = document.createElement("p");
     etiqueta.innerHTML = real(iguales(valor.re));
     etiqueta.innerHTML += imaginario(iguales(valor.im));
     let elemento = document.createElement("div");
     elemento.className = "array-element";
-    elemento.style.border = "5px solid #fff";
+    elemento.style.border = "1px solid #fff";
     elemento.style.backgroundColor = "#fff";
     elemento.style.color = "#fff";
-    elemento.style.fontWeight = "600";
-    elemento.style.padding = "0 16px";
+    elemento.style.fontWeight = "100";
+    elemento.style.padding = "0px 0px";
     elemento.appendChild(etiqueta);
     container.innerHTML += `${elemento.outerHTML}`;
   }
@@ -101,11 +102,11 @@ function modificaArray(contenedor,complejo) {
   etiqueta.innerHTML = real(iguales(complejo.re));
   etiqueta.innerHTML += imaginario(iguales(complejo.im));
   contenedor.className = "array-element";
-  contenedor.style.display = "inline-flex";
+ contenedor.style.display = "inline-flex"; //Aquí
   contenedor.style.border = "1px solid #fff";
   contenedor.style.backgroundColor = "#fff";
   contenedor.style.color = "#fff";
-  contenedor.style.padding = "0 16px";
+  contenedor.style.padding = "0px 0px";
   contenedor.appendChild(etiqueta);
   return contenedor;
 }
@@ -120,12 +121,12 @@ function modificaArrays(contenedor,complejos) {
     elemento.style.border = "1px solid #fff";
     elemento.style.backgroundColor = "#001848";
     elemento.style.color = "#fff";
-    elemento.style.fontWeight = "600";
-    elemento.style.padding = "0 16px";
+    elemento.style.fontWeight = "normal";
+    elemento.style.padding = "0 0";
     elemento.appendChild(etiqueta);
     contenedor.innerHTML += `${elemento.outerHTML}`;
   }
-  contenedor.style.left = `${(canvas.offsetWidth / 2) - (contenedor.offsetWidth / 2)}px`;
+  contenedor.style.left = `${(canvas.offsetWidth / 3) - (contenedor.offsetWidth / 4)}px`;
   return contenedor;
 }
 
@@ -147,7 +148,7 @@ const creaBoton = (textoBoton = "CONTINUAR") => {
   botoncito.style.color = "#fff";
   botoncito.style.padding = "8px 16px";
   botoncito.style.borderStyle = "none";
-  botoncito.style.borderRadius = "3px";
+  botoncito.style.borderRadius = "30px";
   botoncito.style.transition = "all 0.3s ease 0s";
 
   botoncito.addEventListener("mouseenter", (hover) => {
@@ -157,7 +158,7 @@ const creaBoton = (textoBoton = "CONTINUAR") => {
     // reset the color after a short delay
     botoncito.addEventListener("mouseleave", () => {
       hover.target.style.transform = "scale(95%)";
-      hover.target.style.color = "#001848";
+      hover.target.style.color = "#fff";
       hover.target.style.boxShadow = "none";
     });
   });

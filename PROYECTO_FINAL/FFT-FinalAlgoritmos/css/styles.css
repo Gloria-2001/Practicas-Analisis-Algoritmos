@@ -40,7 +40,7 @@ button
     background-color: #001848!important;
 }
 #canvas{
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 #form1, #form2{
@@ -119,5 +119,6 @@ span[id^=polinomio3],span[id^=polinomio4],span[id^=resultadosP], span[id^="resul
 
 .array-element p{
     color: fff;
+    font-size: .7em;
     margin: 0px;
 }
