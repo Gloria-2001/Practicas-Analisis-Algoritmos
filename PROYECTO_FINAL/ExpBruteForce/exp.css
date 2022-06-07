@@ -29,3 +29,18 @@ h4{
     color:#018abe;
     
 }
+
+.ImgBruta{
+    width: 550px;
+    height: 200px;
+}
+
+.ImgBruta1{
+    text-align: left;
+    width: 110px;
+    height: 50px;
+}
+
+.fuerzaBruta{
+    display: inline;
+}
