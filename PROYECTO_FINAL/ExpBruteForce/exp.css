@@ -27,7 +27,11 @@ h4{
     font-family: "QuickSand_M";
     font-size: 1.3em;
     color:#018abe;
-    
+}
+
+.fuerzaBruta{
+    display: flex;
+    justify-content: center;
 }
 
 .ImgBruta{
@@ -37,8 +41,12 @@ h4{
 
 .ImgBruta1{
     text-align: left;
-    width: 110px;
+    width: 80px;
     height: 50px;
+}
+
+#valAleatorios{
+    width: 150px;
 }
 
 .ImgBruta2{

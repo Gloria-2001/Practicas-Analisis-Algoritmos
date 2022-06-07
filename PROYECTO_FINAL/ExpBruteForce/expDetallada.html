@@ -43,7 +43,7 @@
 
         <br>
         <div>
-            <h3>Explicación de funcionamiento del  Calculo por fuerza bruta en Plataforma</h3>   
+            <h3>Explicación de funcionamiento del Cálculo por fuerza bruta en Plataforma</h3>   
         </div> 
         <br>
 
@@ -53,8 +53,8 @@
     <br> -->
 
         <p>
-            Observamos en nuestra en nuestra página de solución por fuerza bruta el ingreso de
-            valores para el polinomio 1 y polinomio 2. Observamos que también tenemos 3 botones.
+            Observamos en nuestra en nuestra página de <a href="../FuerzaBruta/FuerzaBruta.html">Solución por Fuerza Bruta</a> el ingreso de
+            valores para el polinomio 1 y polinomio 2, así como 3 botones.
 
             <div id="fuerzaBruta"><img src="../img/p1.png" alt="" class="ImgBruta"></div>
         </p>   
@@ -66,7 +66,7 @@
             <p>El botón "Valores Aleatorios" nos sirve para ingresar de manera automatica a todas las
                 entradas de polinomio1 y polinomio2 valores aleatorios en un rango de 1 -100.
             </p>
-            <div class="fuerzaBruta"><img src="../img/p3.png" alt="" class="ImgBruta1"></div>
+            <div class="fuerzaBruta"><img src="../img/p3.png" alt="" class="ImgBruta1" id="valAleatorios"></div>
             <p>El botón "Ceros" nos sirve para una vez terminada una operación podamos reiniciarlas 
                 entradas volviendolas cero, teniendo asi el paso libre para ingresar valores nuevos.
             </p>
@@ -78,7 +78,7 @@
         </div>     
         <br>
         <p>
-            Para este ejemplo trabajaremos presionando el botón " Valores Aleatorios", una vez generados
+            Para este ejemplo trabajaremos presionando el botón " Valores Aleatorios"; una vez generados
             procederemos a dar click en el botón "Mostrar".
 
             <div id="fuerzaBruta"><img src="../img/p5.png" alt="" class="ImgBruta"></div>
@@ -87,7 +87,7 @@
         <p>
             Respectivamente extraemos solo los coeficientes de los polinomios 1 y 2 
              de esta forma trabajaremos de manera mas sencilla. Empezaremos a multiplicar 
-             el primer termino del polinomio 1 por todos los terminos del polinomio dos, almacenaremos 
+             el primer término del polinomio 1 por todos los términos del polinomio dos, almacenaremos 
              estos resultados en una matriz.
 
 
@@ -97,7 +97,7 @@
 
         <p>
             En el siguiente paso tomaremos el siguiente coeficiente del polinomio 1 y comenzaremos a multiplicarlo 
-            por todos los elementos del polinomio 2 y asi de manera sucesiva almacenando asi los resultados en la matriz.
+            por todos los elementos del polinomio 2 y asi de manera sucesiva almacenando todos los resultados en la matriz.
 
             <div id="fuerzaBruta"><img src="../img/p7.png" alt="" class="ImgBruta2"></div>
         </p> 
@@ -109,15 +109,9 @@
         </p> 
 
 
-        <p>
-            De esta manera obtenemos la siguiente matriz formada por la multiplicación de ambos polinomios.
- 
-             <div id="fuerzaBruta"><img src="../img/p8.png" alt="" class="ImgBruta3"></div>
-         </p> 
-
          <p>
-            Por ultimo, empezaremos a sumar cada una de las diagonales de la matriz para obtener asi
-            polinomio resultado de multiplicar ambos polinomios, la suma se puede apreciar con los colores relacionales
+            Por último, empezaremos a sumar cada una de las diagonales de la matriz para obtener asi
+            polinomio resultado de multiplicar ambos polinomios. La suma se puede apreciar con los colores relacionales
             obteniendo un polinomio de grado 8.
  
              <div id="fuerzaBruta"><img src="../img/p9.png" alt="" class="ImgBruta4"></div>
