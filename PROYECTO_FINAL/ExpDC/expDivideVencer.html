@@ -56,9 +56,11 @@
             <h3>Explicación de funcionamiento del Cálculo por Divide y Vencerás</h3>   
         </div> 
         <br>
+
 <div class="titulos">
     <h3 id="primerTitulo">¿Qué es la tranformada rápida de fourier?</h3>
 </div>
+
 <div class="textos" id="introduccion">
     <p>
         La siguiente página muestra una breve introducción de la transformada rápida de Fourier (FFT por sus siglas en inglés), el cual es un algoritmo para el cálculo de la transformada discreta de Fourier que reduce el tiempo de ejecución del programa en gran medida. 
@@ -98,12 +100,15 @@
         La FFT es de gran importancia en una amplia variedad de aplicaciones, desde el tratamiento digital de señales y filtrado digital en general a la resolución de ecuaciones en derivadas parciales o los algoritmos de multiplicación rápida de grandes enteros.
         </p> 
 </div>  
+<div class="textos" id="Cuatro">
+    <h3 id="primerTitulo">
+        ¿Cómo se utiliza la transformada de Fourier para la multiplicación de polinomio?
+    </h3>
+</div>  
 
-    <h3 id="primerTitulo">¿Cómo se utiliza la transformada de Fourier para la múltilpicación de polinomios?</h3>
-<br>
 <div class="textosDos">
      <p>
-      La imagen que se puede observar a continuación muestra como funciona la transformada rápida de Fourier. 
+      La imagen que se puede observar a continuación muestra como funciona la transformada rápida de Fourier<b>paso a paso</b>. 
      </p>
 
     <br>
@@ -128,7 +133,75 @@
 <div class="imgg">
 <img src="imgg/Fourier.png" alt="Explicación de como funciona fouerier" class="imgCooleyTukeys"/>
 </div>
+<br>
+<br>
+<br>
 
+<div class="textos" id="Cinco">
+    <h3 id="primerTitulo">
+        Explicación Teorica de la transformada rápida de Fourier
+    </h3>
+</div>
+<div class="textosDos">
+<p>
+ Supongamos que tenemos dos polinomios los cuales llamamos A(x) y B(x), entonces, la multiplicación de estos polinomios nos darán como resultado un tercer polinomio C(x). <br> <br> A(X) * B(X) = C(X) <br> <br>
+ Finalmente, si se evaluan los polinomios:
+ <ol>
+     <li>
+         A(X)
+     </li>
+     <li>
+         B(X)
+     </li>
+     <li>
+         C(x)
+     </li>
+ </ol>
+</p>
+<br>
+<br>
+<p>
+    En el siguiente evaluación de puntos {-2, -1, 0, 1, 2}, nos arroja como resultado las gráficas que se pueden ver en la siguiente imagen. Tanto para el polinomio A(X), B(X) y C(x).
+</p>
+</div> 
+
+<div class="imgg">
+   <img src="imgg/PolinomiosProject.jpg" alt="Graficas que hacen relación a un polinomio y la tranformada de fourier">
+</div>
+<br>
+<br>
+<br>
+<div class="textos" id="Cuatro">  
+<h3 id="primerTitulo">
+    ¿Qué podemos obtener de la siguiente observación?
+</h3>
+</div>
+
+<div class="juntos">
+    <div class="textosDos">
+     <p>
+     Supongamos ahora que tenemos 8 puntos a evaluar los cuales son: <br> {-4, -3, -2, -1, 0, 1, 2, 3, 4} <br> Los cuales se puede observar que es un conjunto de puntos par. <br>
+     <br>
+      La gráfica que nos muestra sería la que se peude observar en la sigueinte figura:
+     </p>
+     </div>
+    </div>
+    <h3 id="primerTitulo">Polinomio Par:</h3>
+    <div class="imgg">
+        <img id="imgEquisCuadrada" src="imgg/EquisAlCuadrado.png" alt="">
+    </div>
+</div>
+<div class="textos" id="Tres">
+<p>
+    Esto es cierto porque se sabe que: P(x) = P(-x) para polinomios de grado par y P(x) = -P(x) para polinomios de grado impar.
+</p>
+</div>
+<h3 id="primerTitulo">Polinomio impar: </h3> <br>
+<div class="imgg">
+     <img  id="imgEquisCuadrada" src="imgg/PolinomioImpart.png" alt="Muestra la gráfica del término x">
+</div>
+
+<!---------------------------------------------------------------->
 <div class="boton">
 <button><a href="/PROYECTO_FINAL/index.html">Regresar al inicio</a>
 </button>

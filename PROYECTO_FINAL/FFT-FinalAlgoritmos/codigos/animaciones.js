@@ -1,4 +1,4 @@
-let miliseconds = {value: 650};
+let miliseconds = {value: 650 };
 const topMargin = 10;
 let getTimeout = () => {
   return miliseconds;
@@ -30,14 +30,17 @@ function crearSubA(contenedor,arreglo,direccion) {
     elemento.appendChild(etiqueta);
     container.innerHTML += `${elemento.outerHTML}`;
   }
+
   if (direccion === 'I') {
     container.style.left = `${contenedor.offsetLeft - contenedor.offsetWidth/8}px`;
     container.style.top = `${contenedor.offsetTop + contenedor.offsetHeight + topMargin}px`;
   }
+
   else if (direccion === 'D') {
     container.style.left = `${contenedor.offsetLeft + contenedor.offsetWidth * (3/2)}px`;
     container.style.top = `${contenedor.offsetTop}px`;
   }
+
   return container;
 }
 

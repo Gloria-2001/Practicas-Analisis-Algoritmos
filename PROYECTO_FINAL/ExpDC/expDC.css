@@ -124,6 +124,7 @@ z-index: 1;
 ol, li{
     font-family: QuickSand_B;
 }
+
     #primerTitulo{
         color: black;
         text-decoration: none;
@@ -184,5 +185,30 @@ ol, li{
         border-style: dashed;
       }
 
+      #Cuatro{
+        border-radius: 20px;
+        margin: 20px;
+        margin-bottom: 50px;
+        justify-content: center;
+        border-left:8px solid #edde40;
+        border-right:8px solid #edde40;
+        background-color: #e9bf37;
+      }
+
+      #Cinco{
+        border-radius: 20px;
+        margin: 20px;
+        margin-bottom: 50px;
+        justify-content: center;
+        border-left:8px solid #edde40;
+        border-right:8px solid #edde40;
+        background-color: #50cc2d;
+      }
+
+      #imgEquisCuadrada{
+          width: 700px;
+          height: auto;
+          padding: 20px;
+      }
 
 
