@@ -54,6 +54,22 @@
     margin: 20px;
     }
 
+.textosDos{
+    width: auto;
+    height: auto;
+    background: #f7f5f5; 
+    font-weight: bold; 
+    padding: 30px; 
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+    #primerTitulo{
+        color: black;
+        text-decoration: none;
+    }
+
     #cooley-tukey{
         margin: 20px;
         text-align: center;
@@ -70,15 +86,15 @@
         border-style: dashed;
       }
     
-    #imgCooleyTukey{
+    #imgCooleyTukeyDos{
         margin: 20px 20px 20px 100px;
-        width: 350px;
+        width: 700px;
         height: auto;
     }
 
     #imgCooleyTukey{
         margin: 10px;
-        width: 350px;
+        width: 600px;
         height: auto;
     }
 
@@ -97,6 +113,15 @@
         margin-right: 50%;
         margin-bottom: 50px;
         border-left:8px solid #edde40;
+        border-style: dashed;
+      }
+
+    #Tres{
+        border-radius: 20px;
+        margin: 20px;
+        margin-bottom: 50px;
+        border-left:8px solid #edde40;
+        border-right:8px solid #edde40;
         border-style: dashed;
       }
 

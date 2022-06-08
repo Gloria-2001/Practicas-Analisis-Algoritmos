@@ -39,11 +39,8 @@
         </div> 
         <br>
 <div class="titulos">
-    <h1>¿Qué es la tranformada rápida de fourier?</h1>
+    <h3 id="primerTitulo">¿Qué es la tranformada rápida de fourier?</h3>
 </div>
-<br>
-<br>
-
 <div class="textos" id="introduccion">
     <p>
         La siguiente página muestra una breve introducción de la transformada rápida de Fourier (FFT por sus siglas en inglés), el cual es un algoritmo para el cálculo de la transformada discreta de Fourier que reduce el tiempo de ejecución del programa en gran medida. 
@@ -61,7 +58,6 @@
         Desde 1965, cuando James W. Cooley y John W. Tukey publicaron dicho algoritmo, su uso se ha expandido rápidamente y las computadoras personales han impulsado una explosión de aplicaciones adicionales de la FFT. Algunos ejemplos de la aplicación de la FFT son el diseño de circuitos, espectroscopia, cristalografía, procesamiento de señales y comunicaciones, imágenes, etc.
         <br>
         <br>
-        <br>
         El algoritmo de Cooley-Tukey hace a la FFT extremadamente útil al reducir el número de cálculos a partir de algo del orden n<sup>2</sup> a algo nlogn, lo que obviamente ofrece una enorme reducción en el tiempo de cálculo.
     </p>
 </div>
@@ -74,18 +70,47 @@
         “El algoritmo de la transformada rápida de Fourier puede reducir el tiempo necesario para encontrar la transformada discreta de Fourier de varios minutos a menos de un segundo, y puede reducir los costros de varios dólares a varios centavos”– G. D. Bergland –
     </p>
 </div>
-
     <div class="imgg">
-        <img src="imgg/arbolDeLaBarranca.png" alt="FFT" id="imgCooleyTukey">
+        <img src="imgg/arbolDeLaBarranca.png" alt="FFT" id="imgCooleyTukeyDos">
     </div>
-
-<div class="textos" id="Uno">
+<div class="textos" id="Tres">
     <p>
         La transformada rápida de Fourier, conocida por la abreviatura de FFT (Fast Fourier Transform) es un algoritmo eficiente que permite calcular la transformada de Fourier discreta (DFT) y su inversa. 
-        <br>
+        <br><br>
         La FFT es de gran importancia en una amplia variedad de aplicaciones, desde el tratamiento digital de señales y filtrado digital en general a la resolución de ecuaciones en derivadas parciales o los algoritmos de multiplicación rápida de grandes enteros.
         </p> 
 </div>  
+
+    <h3 id="primerTitulo">¿Cómo se utiliza la transformada de Fourier para la múltilpicación de polinomios?</h3>
+<br>
+<div class="textosDos">
+     <p>
+      La imagen que se puede observar a continuación muestra como funciona la transformada rápida de Fourier. 
+     </p>
+
+    <br><br>
+     <p> <b>Pasos:</b> </p>
+    <br><br>
+
+     <ol>
+        <li>
+          En la imagen se puede observar que la transformada rápida de Fourier toma los coeficientes de los polinomios y mediante la formula de "La tranformada discreta de fourier" los convierte en puntos gráficables.
+        </li>
+        <br>
+        <li>
+          Como segundo punto, una vez que la transformada de Fourier ha mapeado en el plano complejo los coeficientes de los polinomios los multiplica.
+        </li>
+        <br>
+        <li>
+            Como tercer paso, cada resultado de las multiplicaciones los convierte en coeficientes del tercer polinomio o polinomio resultante mediante la transformada inversa de Fourier.
+        </li>
+    </ol>
+</div>
+<br>
+<br>
+<div class="imgg">
+<img src="imgg/Fourier.png" alt="Explicación de como funciona fouerier" class="imgCooleyTukeys"/>
+</div>
     
     <footer>
         <p>&copy; Copyright</p>
