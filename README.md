@@ -9,3 +9,4 @@ Este es un compendio de las prácticas de la materia de Análisis de Algoritmos,
 ## Proyecto
 Transformada Rápida de Fourier y Multiplicación Polinomial
 Dados los polinomios A(x) y B(x), encontrar C(x)=A(x)B(x). Un enfoque ordinario del algoritmo estaría en orden cuadrático, pero gracias a la FFT (Fast Fourier Transformation), esto puede ser mejorado. Aplicar el paradigma Divide y Vencerás para este objetivo y mostrar el funcionamiento. 
+Página web del proyecto: https://fft-multiplicacionpolinomial.firebaseapp.com/ 
